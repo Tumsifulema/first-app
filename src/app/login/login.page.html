@@ -1,20 +1,19 @@
 <ion-card class="login-card">
   <ion-card-header class="login-header">
-       <ion-label>Login here</ion-label>
+       <ion-label>Login</ion-label>
   </ion-card-header>
   <ion-card-content>
       <ion-list class="input">
           
-          <ion-input aria-label="true" placeholder="Enter username  *required" type="text" fill="outline"></ion-input>
-          <ion-input aria-label="true" placeholder="Enter your email here  *required" type="email" fill="outline" class="second-input" helperText="Enter a valid email" errorText="Invalid email" ngModel email ></ion-input> 
-          <ion-input aria-label="true" placeholder="Enter password  *required" type="password" fill="outline" class="third-input"></ion-input>
+          <ion-input aria-label="true" placeholder="Enter email username or phone number " type="text" fill="outline" helperText="Enter a valid email" errorText="Invalid email" ngModel email></ion-input>
+          <ion-input aria-label="true" placeholder="Enter password " type="password" fill="outline" class="second-input" ngModel password ></ion-input>
           
       </ion-list>
         <ion-buttons>
-          <ion-button class="continue-button" routerLink="intro" id="continue-button">Continue</ion-button>
+          <ion-button class="continue-button" id="continue-button">Continue</ion-button>
         </ion-buttons>
         <ion-toast trigger="continue-button" message="please wait..." [duration]="200"></ion-toast>
 
-        <p>Don't have an account? <span><a href="#" class="create-account">Create one</a></span></p>
+        <p class="donthave">Don't have an account? <span><a href="home/signup" class="create-account">Create one</a></span></p>
   </ion-card-content>
 </ion-card>

@@ -1,0 +1,32 @@
+.home-card {
+    align-self: center;
+    width: 80%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 20px;
+    height: 90%;
+}
+.welcome-name {
+    text-align: center;
+    color: rgb(255, 44, 44);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+ion-button {
+    --background:rgb(255, 44, 44) ;
+    --background-hover:#000000;
+}
+.welcome-content {
+    margin-top: 250px;
+}
+.button-1 {
+    margin-right: 120px;
+    width: 120px;
+    height: 45px;
+}
+.button-2 {
+    width: 120px;
+    height: 45px;
+}

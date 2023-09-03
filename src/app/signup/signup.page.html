@@ -1,13 +1,20 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>signup</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-card class="login-card">
+  <ion-card-header class="login-header">
+       <ion-label>Sign up</ion-label>
+  </ion-card-header>
+  <ion-card-content>
+      <ion-list class="input">
+          <ion-input aria-label="true" placeholder="First name" type="text" fill="outline" class="second-input" ngModel text ></ion-input>
+          <ion-input aria-label="true" placeholder="Last name" type="text" fill="outline" class="second-input" ngModel text ></ion-input>
+          <ion-input aria-label="true" placeholder="Enter email  or username " type="email" fill="outline" class="second-input" helperText="Enter a valid email" errorText="Invalid email" ngModel email></ion-input>
+          <ion-input aria-label="true" placeholder="Enter password " type="password" fill="outline" class="second-input" ngModel password ></ion-input>
+          <ion-input aria-label="true" placeholder="Confirm password " type="password" fill="outline" class="second-input" ngModel password ></ion-input>
+      </ion-list>
+        <ion-buttons>
+          <ion-button class="continue-button" id="continue-button">Continue</ion-button>
+        </ion-buttons>
+        <ion-toast trigger="continue-button" message="please wait..." [duration]="200"></ion-toast>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">signup</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+        <p>Already have an account? <span><a href="home/login" class="create-account">Login</a></span></p>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,55 @@
+.login-header {
+    text-align: center;
+    color: rgb(255, 44, 44);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .login-card {
+    width: 500px;
+    align-self: center;
+    height: 90%;
+  }
+  .continue-button {
+    background-color: rgb(255, 58, 58);
+    padding: 5px 30px;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    margin-left: 150px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
+  
+  .second-input  {
+    margin-top: 13px;
+  }
+
+  .create-account {
+    text-decoration: none;
+    color: red;
+  }
+  
+  .input {
+    margin-top: 0%;
+  }
+  
+  @media screen and (max-width:470px)  {
+    .login-card {
+        width: 300px;
+        align-self: center;
+        margin-bottom: 0;
+    }
+    .continue-button {
+        background-color: rgb(255, 58, 58);
+        padding: 5px 20px;
+        color: white;
+        text-align: center;
+        font-size: 17px;
+        margin-left: 75px;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+  }
+  
