@@ -6,11 +6,11 @@
       <ion-list class="input">
           
           <ion-input aria-label="true" placeholder="Enter email username or phone number " type="text" fill="outline" helperText="Enter a valid email" errorText="Invalid email" ngModel email></ion-input>
-          <ion-input aria-label="true" placeholder="Enter password " type="password" fill="outline" class="second-input" ngModel password ></ion-input>
+          <ion-input aria-label="true" placeholder="Enter password " type="password" fill="outline" class="second-input" ngModel password [counter]="true" maxlength="8"></ion-input>
           
       </ion-list>
         <ion-buttons>
-          <ion-button class="continue-button" id="continue-button">Continue</ion-button>
+          <ion-button class="continue-button" id="continue-button" routerLink="details">Continue</ion-button>
         </ion-buttons>
         <ion-toast trigger="continue-button" message="please wait..." [duration]="200"></ion-toast>
 
