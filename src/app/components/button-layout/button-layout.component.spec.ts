@@ -3,7 +3,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { ButtonLayoutComponent } from './button-layout.component';
 
-describe('ButtonLayoutComponent', () => {
+describe('InputLayoutComponent', () => {
   let component: ButtonLayoutComponent;
   let fixture: ComponentFixture<ButtonLayoutComponent>;
 

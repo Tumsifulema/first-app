@@ -8,6 +8,8 @@ import { LoginPageRoutingModule } from './login-routing.module';
 
 import { LoginPage } from './login.page';
 
+import { InputLayoutComponent } from '../components/input-layout/input-layout.component';   //added component button here
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,9 @@ import { LoginPage } from './login.page';
     IonicModule,
     LoginPageRoutingModule
   ],
-  declarations: [LoginPage]
+  declarations: [
+    LoginPage , 
+    InputLayoutComponent,
+  ]
 })
 export class LoginPageModule {}

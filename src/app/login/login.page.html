@@ -6,8 +6,7 @@
       <ion-list class="input">
           
           <ion-input aria-label="true" placeholder="Enter email username or phone number " type="text" fill="outline" helperText="Enter a valid email" errorText="Invalid email" ngModel email></ion-input>
-          <ion-input aria-label="true" placeholder="Enter password " type="password" fill="outline" class="second-input" ngModel password [counter]="true" maxlength="8"></ion-input>
-          
+           <app-input-layout></app-input-layout>
       </ion-list>
         <ion-buttons>
           <ion-button class="continue-button" id="continue-button" routerLink="details">Continue</ion-button>
