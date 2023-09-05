@@ -8,13 +8,25 @@ import { SignupPageRoutingModule } from './signup-routing.module';
 
 import { SignupPage } from './signup.page';
 
+import { InputNameComponent } from '../components/input-name/input-name.component';
+import { InputPasswordComponent } from '../components/input-password/input-password.component';
+import { InputEmailComponent } from '../components/input-email/input-email.component';
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SignupPageRoutingModule
+    SignupPageRoutingModule,
+    SharedModule
+    
   ],
-  declarations: [SignupPage]
+  declarations: [
+    SignupPage,
+    InputNameComponent,
+   
+  
+  ]
 })
 export class SignupPageModule {}

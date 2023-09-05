@@ -12,18 +12,17 @@ import { InputEmailComponent } from '../components/input-email/input-email.compo
 
 import { InputPasswordComponent } from '../components/input-password/input-password.component';
 import { ButtonLayoutComponent } from '../components/button-layout/button-layout.component';
+import { SharedModule } from '../shared/shared.module';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginPageRoutingModule
+    LoginPageRoutingModule,
+    SharedModule
   ],
   declarations: [
-    LoginPage, 
-    InputEmailComponent,
-    InputPasswordComponent,
-    ButtonLayoutComponent
+    LoginPage
   ]
 })
 export class LoginPageModule {}

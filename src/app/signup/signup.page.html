@@ -4,17 +4,12 @@
   </ion-card-header>
   <ion-card-content>
       <ion-list class="input">
-          <ion-input aria-label="true" placeholder="First name" type="text" fill="outline" class="second-input" ngModel text ></ion-input>
-          <ion-input aria-label="true" placeholder="Last name" type="text" fill="outline" class="second-input" ngModel text ></ion-input>
-          <ion-input aria-label="true" placeholder="Enter email  or username " type="email" fill="outline" class="second-input" helperText="Enter a valid email" errorText="Invalid email" ngModel email></ion-input>
-          <ion-input aria-label="true" placeholder="Enter password " type="password" fill="outline" class="second-input" ngModel password ></ion-input>
+          <app-input-name></app-input-name>
+          <app-input-email></app-input-email>
+          <app-input-password></app-input-password>
           <ion-input aria-label="true" placeholder="Confirm password " type="password" fill="outline" class="second-input" ngModel password ></ion-input>
       </ion-list>
-        <ion-buttons>
-          <ion-button class="continue-button" id="continue-button" routerLink="details">Continue</ion-button>
-        </ion-buttons>
-        <ion-toast trigger="continue-button" message="please wait..." [duration]="200"></ion-toast>
-
-        <p>Already have an account? <span><a href="home/login" class="create-account">Login</a></span></p>
+      <app-button-layout  routerLink="details"></app-button-layout>
+       <p>Already have an account? <span><a href="home/login" class="create-account">Login</a></span></p>
   </ion-card-content>
 </ion-card>
