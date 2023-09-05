@@ -8,8 +8,10 @@ import { LoginPageRoutingModule } from './login-routing.module';
 
 import { LoginPage } from './login.page';
 
-import { InputLayoutComponent } from '../components/input-layout/input-layout.component';   //added component button here
+import { InputEmailComponent } from '../components/input-email/input-email.component';
 
+import { InputPasswordComponent } from '../components/input-password/input-password.component';
+import { ButtonLayoutComponent } from '../components/button-layout/button-layout.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -18,8 +20,10 @@ import { InputLayoutComponent } from '../components/input-layout/input-layout.co
     LoginPageRoutingModule
   ],
   declarations: [
-    LoginPage , 
-    InputLayoutComponent,
+    LoginPage, 
+    InputEmailComponent,
+    InputPasswordComponent,
+    ButtonLayoutComponent
   ]
 })
 export class LoginPageModule {}
