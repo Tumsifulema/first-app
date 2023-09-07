@@ -24,6 +24,9 @@ id="firstName"
 minLength="4"
 name1="firstName"
 #name1="ngModel" 
+autocomplete="name1"
+clear-input="true"
+inputmode="text"
 ></ion-input>
 <div *ngIf="name1.invalid && (name1.dirty || name1.touched)"class="alert">
   <div *ngIf="name1.errors?.['required']">Name is required</div>
@@ -41,6 +44,8 @@ id="secondName"
 minLength="4"
 name2="secondName"
 #name2="ngModel" 
+autocomplete="name2"
+clear-input="true"
 ></ion-input>  
 <div *ngIf="name2.invalid && (name2.dirty || name2.touched)"class="alert">
   <div *ngIf="name2.errors?.['required']">Name is required</div>
