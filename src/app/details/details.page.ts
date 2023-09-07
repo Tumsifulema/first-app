@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MaskitoElementPredicateAsync, MaskitoOptions } from '@maskito/core';
 
 @Component({
   selector: 'app-details',

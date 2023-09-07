@@ -4,16 +4,25 @@
     <ion-list-header class="header">
       <ion-label>Details</ion-label>
     </ion-list-header>
-    <ion-item>
-      <ion-input label="Enter your full name :   " placeholder=" eg. john ibrahim joe" [clearInput]="true" type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input label="Enter your address :   " placeholder=" eg. Tanzania ,Daressalaam ,Mbezibeach " [clearInput]="true" type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input label="Enter your place of birth :   " placeholder=" eg. Kwema district hospital" [clearInput]="true" type="text"></ion-input>
-    </ion-item> 
-     
+    
+     <ion-item>
+      <app-full-name class="item"></app-full-name>
+     </ion-item>
+     <ion-item>
+      <app-email class="item"></app-email>
+     </ion-item>
+     <ion-item>
+      <app-region class="item"></app-region>
+     </ion-item>
+     <ion-item>
+      <app-district class="item"></app-district>
+     </ion-item>
+     <ion-item>
+      <app-phone-number class="item"></app-phone-number>
+     </ion-item>
+     <ion-item>
+      <app-card-number class="item"></app-card-number>
+     </ion-item>
       
   </ion-list>
 </ion-content>
